@@ -22,7 +22,7 @@ export function SignIn(){
     const { register, handleSubmit, formState: { isSubmitting },} = useForm<SignInForm>();
 
     async function handleSignIn(data: SignInForm) {
-        if(!data.company || !data.password || !data.username){
+      if(!data.company || !data.password || !data.username){
           toast.error("Credenciais inválidas.");
           return
         }
